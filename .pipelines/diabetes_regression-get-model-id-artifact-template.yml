@@ -13,8 +13,8 @@ parameters:
   
 steps:
   - download: none
-  - task: DownloadPipelineArtifact@2
-    displayName: Download Pipeline Artifacts
+  - task: DownloadBuildArtifact@2
+    displayName: Download Build Artifacts
     inputs:
       source: 'specific'
       project: '${{ parameters.projectId }}'
